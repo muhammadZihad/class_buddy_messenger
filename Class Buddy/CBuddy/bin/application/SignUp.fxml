@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="604.0" prefWidth="486.0" style="-fx-text-fill: #71708e; -fx-background-color: #cfd86e;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SignUpController">
+   <children>
+      <ImageView fitHeight="429.0" fitWidth="667.0" layoutX="-108.0" layoutY="106.0" opacity="0.29" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Class%20Buddy%20Logo.png" />
+         </image>
+      </ImageView>
+      <JFXPasswordField fx:id="pass" alignment="CENTER" layoutX="94.0" layoutY="279.0" prefHeight="25.0" prefWidth="296.0" promptText="P A S S W O R D" style="-fx-text-fill: #474743;" />
+      <JFXTextField fx:id="name" alignment="CENTER" layoutX="94.0" layoutY="86.0" prefHeight="26.0" prefWidth="296.0" promptText="N A M E" style="-fx-text-fill: #474743;" />
+      <JFXTextField fx:id="id" alignment="CENTER" layoutX="96.0" layoutY="175.0" prefHeight="26.0" prefWidth="296.0" promptText="I D" style="-fx-text-fill: #474743;" />
+      <JFXTextField fx:id="email" alignment="CENTER" layoutX="96.0" layoutY="435.0" prefHeight="26.0" prefWidth="296.0" promptText="E M A I L" style="-fx-text-fill: #474743;" />
+      <JFXTextField fx:id="phone" alignment="CENTER" layoutX="95.0" layoutY="380.0" prefHeight="26.0" prefWidth="296.0" promptText="P H O N E" style="-fx-text-fill: #474743;" />
+      <JFXButton buttonType="RAISED" layoutX="156.0" layoutY="542.0" onAction="#setata" prefHeight="27.0" prefWidth="177.0" style="-fx-border-color: #474743; -fx-text-fill: #474743; -fx-border-radius: 12; -fx-font-size: 15;" text="SignUp">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <padding>
+            <Insets bottom="5.0" top="5.0" />
+         </padding>
+      </JFXButton>
+      <Label fx:id="lab" layoutX="133.0" layoutY="33.0" style="-fx-font-size: 24px; -fx-text-fill: #fff1d3;" text="Create New Account" />
+      <JFXButton fx:id="btn" layoutX="212.0" layoutY="478.0" style="-fx-border-color: #474743; -fx-text-fill: #474743; -fx-border-radius: 10; -fx-font-size: 15;" text="Photo">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXDatePicker fx:id="date" layoutX="133.0" layoutY="233.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="28.0" prefWidth="217.0" promptText="D  A  T  E    O  F    B  I  R  T  H" style="-fx-text-fill: #474743;" />
+      
+      <JFXPasswordField fx:id="cpass" alignment="CENTER" layoutX="94.0" layoutY="328.0" prefHeight="25.0" prefWidth="296.0" promptText="C O N F I R M  P A S S W O R D" style="-fx-text-fill: #474743;" />
+      <Label fx:id="warn" alignment="CENTER_RIGHT" layoutX="316.0" layoutY="283.0" prefHeight="17.0" prefWidth="73.0" style="-fx-text-fill: red; -fx-font-size: 15px;" />
+      <JFXTextField fx:id="username" alignment="CENTER" layoutX="94.0" layoutY="136.0" prefHeight="26.0" prefWidth="296.0" promptText="U S E R N A M E" style="-fx-text-fill: #474743;" />
+      
+   </children>
+</AnchorPane>

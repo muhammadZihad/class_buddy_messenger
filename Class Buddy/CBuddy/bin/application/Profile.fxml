@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="591.0" prefWidth="473.0" style="-fx-background-color: e2e2e2;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="137.0" layoutY="23.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black;" />
+      <Label fx:id="name" layoutX="65.0" layoutY="257.0" text="Name :  " />
+      <Label fx:id="uname" layoutX="65.0" layoutY="296.0" text="Username : " />
+      <Label fx:id="phn" layoutX="66.0" layoutY="373.0" text="Phone : " />
+      <Label fx:id="id" layoutX="65.0" layoutY="335.0" text="ID : " />
+      <Label fx:id="email" layoutX="66.0" layoutY="406.0" text="Email :  " />
+      <Label fx:id="dob" layoutX="66.0" layoutY="446.0" text="Date of Birth : " />
+      <Label fx:id="addr" layoutX="65.0" layoutY="481.0" text="Address : " />
+      <JFXButton buttonType="RAISED" layoutX="127.0" layoutY="545.0" prefHeight="35.0" prefWidth="60.0" style="-fx-border-color: #606060; -fx-border-radius: 5;" text="Update">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="287.0" layoutY="545.0" prefHeight="35.0" prefWidth="60.0" style="-fx-border-color: #606060; -fx-border-radius: 5;" text="Close">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

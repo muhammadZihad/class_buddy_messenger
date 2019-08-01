@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="631.0" prefWidth="474.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Details">
+   <children>
+      <Text layoutX="141.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-fill: #1ba0e2;" text="Class Buddy v0.1">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <VBox alignment="TOP_CENTER" layoutX="116.0" layoutY="143.0" prefHeight="382.0" prefWidth="240.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-fill: #1ba0e2;" text="Team Members" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-fill: #1ba0e2;" text="Muhammad AR Zihad&#10;Mohammad Alif Hasnain&#10;Arafat Mahmud&#10;Nazmul Hossain Tanim" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Subscribe our Youtube Channel">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Text>
+            <HBox alignment="CENTER" prefHeight="42.0" prefWidth="240.0">
+               <children>
+                  <ImageView fitHeight="48.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@youtube-logo-hd-8.png" />
+                     </image>
+                  </ImageView>
+                  <Hyperlink text="https://www.youtube.com/channel/UCQ8sjK892LO8NgnfQyXDJUg/" />
+               </children>
+            </HBox>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-fill: #1ba0e2;" text="Thanks to be with us." />
+            <JFXButton onAction="#close" prefHeight="44.0" prefWidth="112.0" style="-fx-text-fill: black; -fx-border-color: black;" text="Close">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+      <Text layoutX="153.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Developed by TeaM NooB" />
+      <Text layoutX="52.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="_____________________________________________________________" />
+   </children>
+</AnchorPane>

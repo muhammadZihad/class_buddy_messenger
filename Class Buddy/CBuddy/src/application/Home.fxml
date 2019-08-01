@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="707.0" prefWidth="546.0" style="-fx-background-color: #d9c0e2;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomeController">
+   <children>
+      <Label layoutX="189.0" layoutY="52.0" text="Name : " />
+      <Label layoutX="189.0" layoutY="82.0" text="ID :" />
+      <Label layoutX="189.0" layoutY="122.0" text="Phone : " />
+      <JFXButton layoutX="20.0" layoutY="541.0" onAction="#sendmsg" prefHeight="62.0" prefWidth="502.0" style="-fx-background-color: #1ba0e2; -fx-font-size: 20; -fx-text-fill: white;" text="Send">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXTextArea fx:id="messege" layoutX="20.0" layoutY="461.0" prefHeight="80.0" prefWidth="502.0" promptText="Messege" style="-fx-background-color: #bae3f7; -fx-font-family: Consolas; -fx-highlight-fill: #00ff00; -fx-highlight-text-fill: #000000; -fx-text-fill: #392444; -fx-wrap-text: true; -fx-font-size: 15;" />
+      <TextArea fx:id="text" editable="false" layoutX="19.0" layoutY="171.0" onMouseClicked="#refresh" prefHeight="290.0" prefWidth="504.0" style="-fx-font-family: Consolas; -fx-highlight-fill: #00ff00; -fx-highlight-text-fill: #000000; -fx-text-fill: #2b384c; -fx-wrap-text: true; -fx-opacity: 1.0; -fx-font-size: 15; -fx-control-inner-background: #e9f6fc;" wrapText="true" />
+      <Label fx:id="name" layoutX="233.0" layoutY="52.0" />
+      <Label fx:id="id" layoutX="213.0" layoutY="82.0" />
+      <Label fx:id="phn" layoutX="240.0" layoutY="122.0" />
+      <MenuBar layoutX="2.0" layoutY="2.0" prefHeight="26.0" prefWidth="546.0" style="-fx-background-color: #d9c0e2;">
+        <menus>
+          <Menu mnemonicParsing="false" text="User">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#profile" text="Profile" />
+                  <MenuItem mnemonicParsing="false" onAction="#cBox" text="Chat Box" />
+                  <MenuItem mnemonicParsing="false" onAction="#frnds" text="Friends" />
+                  <MenuItem mnemonicParsing="false" onAction="#close" text="Close" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="About">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#about" text="Details" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane layoutX="20.0" layoutY="38.0" prefHeight="122.0" prefWidth="122.0">
+         <children>
+            <ImageView fx:id="image" fitHeight="122.0" fitWidth="132.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
